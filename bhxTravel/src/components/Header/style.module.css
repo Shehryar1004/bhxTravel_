@@ -1,5 +1,7 @@
 .brandContainer {
+    max-width: 1260px;
     display: flex;
+    margin: 0 auto;
     gap: 1.2rem;
     padding: 1.2rem;
 }

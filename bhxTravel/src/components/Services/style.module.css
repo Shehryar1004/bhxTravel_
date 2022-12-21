@@ -1,0 +1,53 @@
+.servicesContainer {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    width: 100%;
+}
+
+.servicesContent {
+    max-width: 1260px;
+    margin: 1.2rem auto;
+}
+
+.servicesContainer h2 {
+    color: var(--color-text-secondary);
+    font-size: 32px;
+    margin-bottom: 1.2rem;
+}
+
+.servicesCardsContainer {
+    display: grid;
+    gap: 2rem;
+}
+
+.serviceCard {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.serviceCard .iconContainer {
+    color: var(--color-text);
+    margin-bottom: 1.2rem;
+}
+
+.serviceCard p {
+    margin-top: 1rem;
+}
+
+.serviceCard {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+    .servicesCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .servicesCardsContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

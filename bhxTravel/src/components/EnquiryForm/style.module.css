@@ -1,15 +1,17 @@
 .container {
-    background-color: #efefef;
+    background-color: #ffffff;
     border: 1px solid #888;
     border-radius: 12px;
     margin: 1.2rem 0;
-    max-width: 1000px;
+    max-width: 1260px;
     padding: 1.2rem;
 }
 
 .inputsGrid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin: 1.2rem 0;
 }
 
 .inputContainer {
@@ -17,7 +19,39 @@
     flex-direction: column;
 }
 
-@media screen and (min-width: 700px) {
+.inputContainer input,
+.inputContainer select {
+    padding: 0.6rem;
+    margin-top: 8px;
+}
+
+.formWarning {
+    padding: 0.6rem 0;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    margin: 0.6rem 0;
+}
+
+.submitButton {
+    width: 200px;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: var(--color-secondary);
+}
+
+.submitButton.disabled {
+    background-color: #888;
+    cursor: default;
+}
+
+@media screen and (min-width: 800px) {
     .inputsGrid {
         grid-template-columns: 1fr 1fr;
     }

@@ -51,26 +51,28 @@ function Brand() {
 function Navigation() {
     return(
         <div className={styles.navContainer}>
-            <div className={styles.navbar}>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='/about'>About</NavLink>
-                <NavLink to='/services'>Services</NavLink>
-                <NavLink to='/contact'>Contact</NavLink>
-            </div>
+            <div className={styles.navbarContainer}>
+                <div className={styles.navbar}>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
+                </div>
 
-            <div className={styles.socialMediaContainer}>
-                <a href='https://www.facebook.com'>
-                    <BsFacebook color='#fff'/>
-                </a>
-                <a href='https://www.twitter.com'>
-                    <BsTwitter color='#fff'/>
-                </a>
-                <a href='https://www.instagram.com'>
-                    <BsInstagram color='#fff'/>
-                </a>
-                <a href='https://www.whatsapp.com'>
-                    <BsWhatsapp color='#fff'/>
-                </a>
+                <div className={styles.socialMediaContainer}>
+                    <a href='https://www.facebook.com'>
+                        <BsFacebook color='#fff'/>
+                    </a>
+                    <a href='https://www.twitter.com'>
+                        <BsTwitter color='#fff'/>
+                    </a>
+                    <a href='https://www.instagram.com'>
+                        <BsInstagram color='#fff'/>
+                    </a>
+                    <a href='https://www.whatsapp.com'>
+                        <BsWhatsapp color='#fff'/>
+                    </a>
+                </div>
             </div>
         </div>
     )

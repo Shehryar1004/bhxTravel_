@@ -43,6 +43,7 @@ function ServicesPage() {
                 <div className={styles.servicesList}>
                     {services.map(service => (
                         <ServiceCard 
+                            key={service.heading}
                             heading={service.heading}
                             image={service.image}
                             tagline={service.tagline}

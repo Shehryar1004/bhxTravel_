@@ -1,3 +1,7 @@
+.active {
+    color: purple;
+}
+
 .brandContainer {
     max-width: 1260px;
     display: flex;

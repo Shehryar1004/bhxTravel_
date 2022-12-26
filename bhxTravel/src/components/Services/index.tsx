@@ -30,12 +30,13 @@ function ServicesSection(){
                 <div className={styles.servicesCardsContainer}>
                     {
                         services.map(service => (
-                        <ServiceCard 
-                            heading={service.heading}
-                            hyperlink={service.hyperlink}
-                            iconName={service.iconName}
-                            text={service.text}
-                        />
+                            <ServiceCard 
+                                key={service.heading}
+                                heading={service.heading}
+                                hyperlink={service.hyperlink}
+                                iconName={service.iconName}
+                                text={service.text}
+                            />
                         ))
                     }
                 </div>

@@ -9,7 +9,7 @@ function ReviewsSection(){
 
             <div className={styles.reviewsGrid}>
                 {reviews.map(review => (
-                    <div className={styles.reviewCard}>
+                    <div className={styles.reviewCard} key={review.name}>
                         <h3>{review.name}</h3>
                         <div className={styles.starsRow}>
                             <div><SvgStar fill='yellow' height={20} width={20}/></div>
